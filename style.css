@@ -1,0 +1,169 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+a{
+   color: goldenrod;
+   background-color: none;
+   text-decoration: none;
+}
+
+.navbar a{
+   font-family: cursive;
+}
+
+body{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.top-info{
+   background-color: black;
+   color: aliceblue;
+   padding: 10px;
+   text-align: center;
+   font-size: 16px;
+}
+
+.navbar{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 10px;
+}
+
+.banner{
+   display: flex;
+   flex-direction: row;
+   background-color: goldenrod;
+   justify-content: space-between;
+   margin-bottom: 30px;
+}
+
+.text{
+   display: flex;
+   flex-direction: column;
+   color: white;
+   justify-content: center;
+   gap: 10px;
+   padding: 30px;
+}
+
+.text h2{
+   font-size: 50px;
+   font-family: cursive;
+}
+
+.banner img{
+   border-radius: none;
+   width: 25%;
+}
+
+.cart{
+   position: relative;
+   color: aliceblue;
+   background: #000;
+   padding: 10px;
+   border-radius: 4px;
+}
+
+.bi-cart{
+   color: goldenrod;
+}
+
+.cartAmount{
+   position: absolute;
+   top: -15px;
+   right: -10px;
+   padding: 4px 5px;
+   background-color: red;
+   border-radius: 4px;
+   font-size: 16px;
+   color: white;
+}
+
+.shop{
+   display: grid;
+   grid-template-columns: repeat(4, 223.5px);
+   gap: 30px;
+   margin-bottom: 60px;justify-content: center;
+}
+
+@media(max-width: 1000px){
+   .shop{
+      grid-template-columns: repeat(2, 223px);
+   }
+   .banner img{
+      width: 30%;
+   }
+}
+
+@media(max-width: 600px){
+   .banner img{
+      width: 35%;
+   }
+}
+
+@media(max-width: 500px){
+   .shop{
+      grid-template-columns: repeat(1, 223px);
+   }
+   .text h2{
+      font-size: 30px;
+   }
+   .banner img{
+      width: 40%;
+   }
+}
+
+.item{
+   border: 2px solid black;
+   border-radius: 50px;
+}
+.item img{
+   border-radius: 48px 48px 0 0;
+}
+
+.item-details{
+   display: flex;
+   flex-direction: column;
+   padding: 5px 10px;
+}
+
+.price-quantity{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding: 10px;
+}
+
+.price{
+   /* padding: 10px; */
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.button{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+}
+
+.bi-dash-lg{
+   color: red;
+}
+
+.bi-plus-lg{
+   color: green;
+}
+
+/* cart items */
+
+.cart-item{
+   display: flex;
+   flex-direction: row;
+   gap:10px;
+   margin-bottom: 30px;
+   justify-content: center;
+}
