@@ -8,6 +8,7 @@ a{
    color: goldenrod;
    background-color: none;
    text-decoration: none;
+   cursor: pointer;
 }
 
 .navbar a{
@@ -120,6 +121,7 @@ body{
 .item{
    border: 2px solid black;
    border-radius: 50px;
+   cursor: pointer;
 }
 .item img{
    border-radius: 48px 48px 0 0;
@@ -148,6 +150,7 @@ body{
    display: flex;
    flex-direction: row;
    gap: 10px;
+   cursor: pointer;
 }
 
 .bi-dash-lg{
@@ -160,10 +163,104 @@ body{
 
 /* cart items */
 
+.cart-items{
+   display: grid;
+   grid-template-columns: repeat(1, 300px);
+   gap:10px;
+   justify-content: center; 
+   margin-bottom: 30px;
+}
+
 .cart-item{
    display: flex;
+   border: 2px solid goldenrod;
+   border-radius: 4px;
+   margin-bottom: 10px;
+}
+
+.cart-item-details{
+   width: 80%;
+   padding: 5px;
+}
+
+.cart-price{
+   font-size: 16px;
+   /* font-weight: bold; */
+}
+
+.quantity-price{
+   display: flex;
    flex-direction: row;
-   gap:10px;
-   margin-bottom: 30px;
+   justify-content: space-between;
+   font-size: 18px;
+   font-weight: bold;
+   padding: 5px 2px;
+}
+
+.label{
+   display: flex;
+   flex-direction: row;
    justify-content: center;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+button{
+   font-size: 14px;
+   border-radius: 4px;
+   padding: 10px;
+   cursor: pointer;
+   
+}
+
+.home{
+   background-color: goldenrod;
+   color: white;
+   border: none;
+   margin:10px
+}
+
+.check-out{
+   background-color: green;
+   color: white;
+   border: none
+}
+
+.clear-cart{
+   background-color: maroon;
+   color: white;
+   border: none
+}
+
+/* modal styling */
+.modal{
+   padding-top: 150px;
+   position: fixed;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content{
+   display:flex;
+   flex-direction: row;
+   color: black;
+   background-color: white;
+   width: 70%;
+   padding: 20px;
+   margin: auto;
+}
+
+.bi-x-lg{
+   font-style: bold;
+   margin: 10px;
+   cursor: pointer;
+}
+
+.bi-x-lg:hover{
+ color: red;
 }
