@@ -7,11 +7,11 @@ let getStoreItems = () => {
             let {id, name, price, img, desc} = x
             let search = basket.find((x) => x.id == id) || []
             return `
-            <div id =${id} class="item" onclick="viewItem()">
-                <img width = "220" src=${img} alt="">
+            <div id =${id} class="item">
+                <img onclick="viewItem(${id})" width = "220" src=${img} alt="">
                 <div class="item-details">
-                    <h2>${name}</h2>
-                    <p>${desc}</p>
+                    <h2 onclick="viewItem(${id})">${name}</h2>
+                    <p onclick="viewItem(${id})">${desc}</p>
                     <div class="price-quantity">
                         <div class="price">$${price}</div>
                         <div class="button">
