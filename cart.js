@@ -19,10 +19,12 @@ cartCalculation()
 let generateCartItems = () => {
     let totalItems = basket.map((x) =>
         x.item).reduce((x,y) => x+y,0)
-    let totalPrice = basket.map((x) => x.qtyPrice).reduce((x,y) => x+y,0)
+    let totalPrice = +(basket.map((x) => x.qtyPrice).reduce((x,y) => x+y,0)).toFixed(2)
 
-    if (basket.length !== 0){cartItem = basket.map((x)=>{
+    if (basket.length !== 0){
+        cartItem = basket.map((x)=>{
         let {id, item, qtyPrice} = x
+        console.log(basket)
         let search = shopItem.find((y) => y.id == id)
         let {img, name, price} = search
         
@@ -143,6 +145,8 @@ let remove = (id) => {
     localStorage.setItem("data", JSON.stringify(basket))
 
     generateCartItems()
+
+    cartCalculation()
 }
 
 let clearCart = () => {

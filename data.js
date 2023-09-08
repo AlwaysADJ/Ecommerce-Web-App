@@ -25,7 +25,11 @@ let itemSeven = new Items("iwuytw","Nice Suit", 400, "./images/img-7.png", "Lore
 
 let itemEight = new Items("uytwy","Nice Shirt", 509.99, "./images/img-8.png", "Lorem ipsum, dolor sit amet consectetur adipisicing")
 
-let shopItem = [itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix, itemSeven, itemEight]
+let itemNine = new Items("iwuytw","Nice Suit", 400, "./images/img-7.png", "Lorem ipsum, dolor sit amet consectetur adipisicing")
+
+let itemTen = new Items("uytwy","Nice Shirt", 509.99, "./images/img-8.png", "Lorem ipsum, dolor sit amet consectetur adipisicing")
+
+let shopItem = [itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix, itemSeven, itemEight, itemNine, itemTen]
 
 // let shopItem = [
 //     {
